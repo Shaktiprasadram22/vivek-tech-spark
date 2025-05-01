@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from 'react';
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,9 +24,15 @@ const Header = () => {
       isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
     }`}>
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <a href="#" className="text-portfolio-navy text-xl md:text-2xl font-bold transition-all duration-300 hover:text-portfolio-orange transform hover:scale-105">
-          Vivek<span className="text-portfolio-orange transition-all duration-300 hover:text-portfolio-navy">.</span>dev
-        </a>
+        <div className="flex items-center gap-3">
+          <Avatar className="h-10 w-10 border-2 border-portfolio-orange transition-all duration-300 hover:scale-105">
+            <AvatarImage src="https://media.licdn.com/dms/image/v2/D4E03AQGyX_i3AU8AYA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1665151988738?e=1751500800&v=beta&t=EjbEDBebPG_Ey168q-phbifv08elWt6cZGOL0YwkFjw" alt="Vivek" />
+            <AvatarFallback>VS</AvatarFallback>
+          </Avatar>
+          <a href="#" className="text-portfolio-navy text-xl md:text-2xl font-bold transition-all duration-300 hover:text-portfolio-orange transform hover:scale-105">
+            Vivek<span className="text-portfolio-orange transition-all duration-300 hover:text-portfolio-navy">.</span>dev
+          </a>
+        </div>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
