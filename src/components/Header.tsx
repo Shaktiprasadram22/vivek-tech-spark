@@ -38,9 +38,15 @@ const Header = () => {
               {item}
             </a>
           ))}
-          <Button className="bg-portfolio-orange hover:bg-portfolio-navy text-white font-medium">
-            Resume
-          </Button>
+          <a 
+            href="https://drive.google.com/file/d/186it-y4Z2idwoToiOGjyWHf2nRxqMmqk/view?usp=sharing" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button className="bg-portfolio-orange hover:bg-portfolio-navy text-white font-medium">
+              Resume
+            </Button>
+          </a>
         </nav>
         
         {/* Mobile Menu Button */}
@@ -68,9 +74,15 @@ const Header = () => {
                 {item}
               </a>
             ))}
-            <Button className="bg-portfolio-orange hover:bg-portfolio-navy text-white font-medium w-full">
-              Resume
-            </Button>
+            <a 
+              href="https://drive.google.com/file/d/186it-y4Z2idwoToiOGjyWHf2nRxqMmqk/view?usp=sharing" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-portfolio-orange hover:bg-portfolio-navy text-white font-medium w-full">
+                Resume
+              </Button>
+            </a>
           </nav>
         </div>
       )}

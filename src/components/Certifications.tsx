@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -29,18 +28,6 @@ const Certifications = () => {
       issuer: "Lovely Professional University",
       date: "Jul 2024",
       image: "lovable-uploads/6c905152-3844-4348-a867-7f1f609a3331.png"
-    },
-    {
-      title: "Gen-AI for Everyone",
-      issuer: "Coursera",
-      date: "2023",
-      image: "placeholder.svg"
-    },
-    {
-      title: "Mastering DSA in C & C++",
-      issuer: "Udemy",
-      date: "2023",
-      image: "placeholder.svg"
     }
   ];
 
